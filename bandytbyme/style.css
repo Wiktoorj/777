@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 80%;
+    margin: 5vh auto 0;
+    font-family: 'open sans', roboto, sans-serif;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.game {
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+.game div {
+    height: 10vh;
+    flex-grow: 1;
+    margin: 10px;
+    border: 3px solid gray;
+}
+
+.bets,
+.play {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.bets button,
+.play button {
+    height: 90px;
+    text-align: center;
+    padding: 20px 5vw;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color: #333;
+    border: 3px solid black;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 6px;
+}
+
+.play input {
+    height: 90px;
+    font-size: 40px;
+    padding: 20px;
+    width: 50%;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.panel,
+.score,
+.score p {
+    font-size: 26px;
+    margin-top: 5vh;
+}
+
+.panel span,
+.score span {
+    font-weight: bold;
+}
+
+#start {
+    background-color: rgb(66, 10, 92);
+}
+
+.gameover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: chartreuse; */
+    background-color: rgb(194, 5, 5);
+}
+
+.gameover h1 {
+    font-size: 50px;
+    margin-top: 30vh;
+}
+
+.gameover button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 95%;
+    font-size: 36px;
+    border: 3px solid black;
+    padding: 4vh;
+    /* background-color: chartreuse; */
+    background-color: rgb(194, 5, 5);
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+    .wrap {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 46px;
+        margin-bottom: 3vh;
+    }
+
+    .bets button,
+    .play button {
+        padding: 0 3vw;
+        font-size: 30px;
+        letter-spacing: 0px;
+    }
+}

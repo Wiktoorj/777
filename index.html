@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>777LUCKY777</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <h1>777 LUCKY 777</h1>
+
+    <section class="game">
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+    </section>
+
+    <section class="bets">
+      <button id="b1">1</button>
+      <button id="b2">2</button>
+      <button id="b5">5</button>
+      <button id="b50">50</button>
+      <button id="b100">100</button>
+    </section>
+
+    <section class="play">
+      <input type="number" placeholder="PLN" id="bid">
+      <button id="start">Zakręć!</button>
+    </section>
+
+    <section class="panel">STAN KONTA: <span class="wallet"></span> PLN.</section>
+
+    <section class="score">
+      <span class="result"></span>
+      <p>Ilość gier: <span class="number"></span></p>
+      <p class="stats"> <span class="win"></span> wygranych
+        i <span class="loss"></span> przegranych</p>
+    </section>
+
+    <section class="gameover hide">
+      <h1>GAME OVER!</h1>
+      <button class="restart">Doładuj konto o 10 PLN.</button>
+    </section>
+
+  </div>
+
+  <script src="Wallet.js"></script>
+  <script src="Statistics.js"></script>
+  <script src="Draw.js"></script>
+  <script src="Result.js"></script>
+  <script src="Game.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
